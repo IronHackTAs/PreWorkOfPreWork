@@ -53,7 +53,6 @@ displayLinks(){
               </Switch>
             </div>
           </div>
-          
         </div>
       </Router>
     
