@@ -15,6 +15,7 @@ import { elastic as Menu } from "react-burger-menu";
 import { areYouReady } from "./Components/areYouReady";
 
 export default class App extends Component {
+
   showSettings(event) {
     event.preventDefault();
   }
@@ -38,10 +39,25 @@ export default class App extends Component {
     ));
   }
 
+  componentDidMount () {
+    var elem = document.getElementsByClassName('box')
+    var body = document.body,
+    html = document.documentElement;
+
+var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+    window.onscroll = function() {
+        elem[0].style.width = `${(window.scrollY / height)*100}%`;
+        console.log(window.scrollY / height)
+    };
+}
+
   render() {
     return (
       <Router>
         <div id="outer-container">
+        <div class="box"></div>
           <Menu
             right
             isOpen={false}
