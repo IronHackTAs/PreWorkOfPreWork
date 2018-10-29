@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const Intro= () => {
+
   return(
     <div>
         <div id="doc" className="markdown-body container-fluid" style={{position: 'relative'}}><p><img src="https://i.imgur.com/1QgrNNw.png" alt="Ironhack Logo" /></p><h1 id="Intro-to-JavaScript"><a className="anchor hidden-xs" href="#Intro-to-JavaScript" title="Intro-to-JavaScript"><span className="octicon octicon-link" /></a>Intro to JavaScript</h1><h2 id="Learning-Goals"><a className="anchor hidden-xs" href="#Learning-Goals" title="Learning-Goals"><span className="octicon octicon-link" /></a>Learning Goals</h2><p>After this lesson, you will be able to:</p><ul>

@@ -1,6 +1,7 @@
 [
   {
-    "content":"Introduction"
+    "content":"Introduction",
+    "height": "500px"
   },
   {
     "content":"Variables"
